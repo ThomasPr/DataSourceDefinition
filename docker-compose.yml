@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+
+  microservice:
+    build: .
+    ports:
+      - "8080:8080"
+
+  database:
+    image: "postgres:alpine"
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=demo
+      - POSTGRES_USER=demo
+      - POSTGRES_PASSWORD=demo
