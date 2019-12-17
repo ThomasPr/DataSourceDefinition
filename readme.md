@@ -16,6 +16,8 @@ It can be executed by a single command:
 docker-compose down && mvn clean package && docker-compose up --build
 ```
 
+Since the issue occurs only occasionally, this command might need to be executed multiple times.
+
 
 ## Details
 
